@@ -1,0 +1,49 @@
+@import "variables";
+@import "mixins";
+
+.about {
+  background-color: $black;
+
+  @include breakpoint(mobile) {
+
+    &__menu, .button_request {
+      display: none;
+    }
+  }
+
+  &__container {
+    font-size: 11px;
+    line-height: 15px;
+    height: 83px;
+    text-transform: uppercase;
+  }
+
+  &__logo {
+    color: $yellow;
+  }
+
+  &__item {
+
+    &:not(:last-child) {
+      padding-right: 40px;
+    }
+
+    a {
+      color: $white;
+      &:hover {
+        color: $yellow;
+      }
+    }
+  }
+
+  &__phone {
+    color: $yellow;
+    text-decoration: underline;
+  }
+
+  .button_request {
+    width: 180px;
+    padding: 13px 0;
+
+  }
+}

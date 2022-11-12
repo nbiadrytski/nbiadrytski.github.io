@@ -1,0 +1,1377 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: "NunitoSansItalic";
+  src: url("../fonts/NunitoSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "NunitoSans";
+  src: url("../fonts/NunitoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "YesevaOne";
+  src: url("../fonts/YesevaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NunitoSansItalic";
+  src: url("../fonts/NunitoSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "NunitoSans";
+  src: url("../fonts/NunitoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "YesevaOne";
+  src: url("../fonts/YesevaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NunitoSansItalic";
+  src: url("../fonts/NunitoSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "NunitoSans";
+  src: url("../fonts/NunitoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "YesevaOne";
+  src: url("../fonts/YesevaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "NunitoSans", sans-serif;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  background: #E3B873;
+  box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+  outline: 0;
+  border: 1px solid transparent;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: "NunitoSansItalic", sans-serif;
+  cursor: pointer;
+}
+.button:hover {
+  background: transparent;
+  border: 1px solid;
+}
+
+.label {
+  font-size: 13px;
+  line-height: 21px;
+  color: rgba(54, 54, 54, 0.5);
+}
+@media (max-width: 1299px) {
+  .label {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .label .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+
+.input {
+  font-size: 14px;
+  padding: 0 0 5px;
+  display: block;
+  border: none;
+}
+.input:focus {
+  outline: none;
+}
+
+/* The container */
+.checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin: auto auto 12px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 26px;
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* When the checkbox is checked, add yellow background */
+}
+@media (max-width: 1299px) {
+  .checkbox {
+    margin: 0;
+    max-width: 340px;
+    color: #FFFFFF;
+  }
+  .checkbox .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+.checkbox__input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+.checkbox__checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+  /* checkmark is hidden when not checked */
+}
+.checkbox__checkmark:hover {
+  background-color: #C9C9C9;
+}
+.checkbox__checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 6px;
+  top: 2px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.checkbox__input:checked ~ .checkbox__checkmark {
+  background-color: #E3B873;
+  /* Show the checkmark when checked */
+}
+.checkbox__input:checked ~ .checkbox__checkmark:after {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+.flex-jc-sb {
+  justify-content: space-between;
+}
+.flex-jc-c {
+  justify-content: center;
+}
+.flex-jc-fe {
+  justify-content: flex-end;
+}
+.flex-ai-c {
+  align-items: center;
+}
+
+.icon-container__left {
+  margin-right: 9px;
+}
+.icon-container__right {
+  margin-left: 9px;
+}
+
+@font-face {
+  font-family: "NunitoSansItalic";
+  src: url("../fonts/NunitoSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "NunitoSans";
+  src: url("../fonts/NunitoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "YesevaOne";
+  src: url("../fonts/YesevaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NunitoSansItalic";
+  src: url("../fonts/NunitoSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "NunitoSans";
+  src: url("../fonts/NunitoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "YesevaOne";
+  src: url("../fonts/YesevaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.about {
+  background-color: #131313;
+}
+@media (max-width: 1299px) {
+  .about .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  .about__menu, .about .button_request {
+    display: none;
+  }
+}
+.about__container {
+  font-size: 11px;
+  line-height: 15px;
+  height: 83px;
+  text-transform: uppercase;
+}
+.about__logo {
+  color: #E3B873;
+}
+.about__item:not(:last-child) {
+  padding-right: 40px;
+}
+.about__item a {
+  color: #FFFFFF;
+}
+.about__item a:hover {
+  color: #E3B873;
+}
+.about__phone {
+  color: #E3B873;
+  text-decoration: underline;
+}
+.about .button_request {
+  width: 180px;
+  padding: 13px 0;
+}
+
+@font-face {
+  font-family: "NunitoSansItalic";
+  src: url("../fonts/NunitoSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "NunitoSans";
+  src: url("../fonts/NunitoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "YesevaOne";
+  src: url("../fonts/YesevaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NunitoSansItalic";
+  src: url("../fonts/NunitoSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "NunitoSans";
+  src: url("../fonts/NunitoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "YesevaOne";
+  src: url("../fonts/YesevaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.main {
+  background-image: url("../images/main.jpg");
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1299px) {
+  .main {
+    background-image: url("../images/main-mobile.jpg");
+  }
+  .main .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+.main__content {
+  position: relative;
+  z-index: 1;
+  padding-top: 182px;
+  padding-bottom: 196px;
+}
+@media (max-width: 1299px) {
+  .main__content {
+    padding-top: 85px;
+    padding-bottom: 61px;
+  }
+  .main__content .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+.main__title, .main__paragraph {
+  margin: 0;
+  width: 514px;
+  color: #FFFFFF;
+}
+@media (max-width: 1299px) {
+  .main__title, .main__paragraph {
+    max-width: 340px;
+  }
+  .main__title .container, .main__paragraph .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+.main__title {
+  font-family: Yeseva One, sans-serif;
+  font-size: 40px;
+  line-height: 53px;
+  text-transform: uppercase;
+}
+@media (max-width: 1299px) {
+  .main__title {
+    font-size: 23px;
+    line-height: 31px;
+  }
+  .main__title .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+.main__city {
+  color: #E3B873;
+}
+.main__paragraph {
+  margin-top: 19px;
+  font-size: 22px;
+  line-height: 36px;
+}
+@media (max-width: 1299px) {
+  .main__paragraph {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .main__paragraph .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+.main__textline {
+  content: "\a";
+  white-space: pre;
+}
+.main__button {
+  margin-top: 40px;
+  width: 207px;
+  margin-right: 20px;
+  padding: 19px 0;
+}
+@media (max-width: 1299px) {
+  .main__button {
+    width: 340px;
+  }
+  .main__button .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+.main__app-button:before {
+  content: "SUBMIT YOUR APPLICATION";
+}
+@media (max-width: 1299px) {
+  .main .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  .main__app-button:before {
+    content: "APPLICATION";
+  }
+}
+.main__overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@font-face {
+  font-family: "NunitoSansItalic";
+  src: url("../fonts/NunitoSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "NunitoSans";
+  src: url("../fonts/NunitoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "YesevaOne";
+  src: url("../fonts/YesevaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NunitoSansItalic";
+  src: url("../fonts/NunitoSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "NunitoSans";
+  src: url("../fonts/NunitoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "YesevaOne";
+  src: url("../fonts/YesevaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.projects {
+  background-color: #131313;
+}
+@media (max-width: 1299px) {
+  .projects .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  .projects__content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.projects__content {
+  height: 1080px;
+}
+@media (max-width: 1299px) {
+  .projects__content {
+    height: 988px;
+  }
+  .projects__content .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+.projects__title {
+  font-family: "YesevaOne", sans-serif;
+  font-size: 27px;
+  line-height: 37px;
+  color: #E3B873;
+  padding-top: 179px;
+  margin: 0;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+@media (max-width: 1299px) {
+  .projects__title {
+    padding-top: 36px;
+    text-align: center;
+    font-size: 22px;
+  }
+  .projects__title .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+.projects__paragraph {
+  width: 442px;
+  margin: 0 50px 0 0;
+  padding-top: 34px;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 27px;
+}
+@media (max-width: 1299px) {
+  .projects__paragraph {
+    max-width: 340px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 11px;
+  }
+  .projects__paragraph .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+.projects__img-mobile {
+  padding-top: 70px;
+}
+@media (min-width: 1300px) {
+  .projects__img-mobile {
+    display: none;
+  }
+}
+.projects__table {
+  margin-top: 42px;
+  max-width: 400px;
+}
+.projects__table-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #E3B873;
+}
+.projects__table-row_margin_large {
+  margin-top: 34px;
+}
+.projects__column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.projects__column-title {
+  font-family: "YesevaOne", sans-serif;
+  color: #E3B873;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+@media (max-width: 1299px) {
+  .projects__column-title {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .projects__column-title .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+.projects__column-value {
+  margin-top: 9px;
+  color: #FFFFFF;
+  font-size: 13px;
+  line-height: 21px;
+}
+@media (max-width: 1299px) {
+  .projects__column-value {
+    font-size: 11px;
+    line-height: 15px;
+  }
+  .projects__column-value .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1299px) {
+  .projects__right {
+    display: none;
+  }
+  .projects__right .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+.projects__menu {
+  display: flex;
+  justify-content: flex-start;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 19px;
+  margin-top: 107px;
+  margin-bottom: 53px;
+}
+.projects__menu-item {
+  font-family: Yeseva One, sans-serif;
+  color: rgba(255, 255, 255, 0.3);
+  margin-right: 60px;
+  text-decoration: none;
+}
+.projects__menu-item:hover {
+  text-underline-offset: 6px;
+  text-decoration: underline;
+  color: #E3B873;
+}
+.projects__arrows {
+  margin-top: 71px;
+  width: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1299px) {
+  .projects__arrows {
+    display: none;
+  }
+  .projects__arrows .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+.projects__right-arrow {
+  transform: rotate(-180deg);
+}
+.projects__dots {
+  width: 10px;
+  height: 10px;
+  background: #FFFFFF;
+  border-radius: 30px;
+  margin-left: 20px;
+}
+.projects__dots:nth-child(5) {
+  margin-right: 20px;
+}
+.projects__img {
+  filter: drop-shadow(0px 50px 30px rgba(0, 0, 0, 0.15));
+}
+
+@font-face {
+  font-family: "NunitoSansItalic";
+  src: url("../fonts/NunitoSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "NunitoSans";
+  src: url("../fonts/NunitoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "YesevaOne";
+  src: url("../fonts/YesevaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NunitoSansItalic";
+  src: url("../fonts/NunitoSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "NunitoSans";
+  src: url("../fonts/NunitoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "YesevaOne";
+  src: url("../fonts/YesevaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.control {
+  background-color: #FFFFFF;
+}
+@media (max-width: 1299px) {
+  .control {
+    background-color: #131313;
+  }
+  .control .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+.control__content {
+  height: 326px;
+}
+.control__content-container {
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+.control__video-cover {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 817px;
+  height: 434px;
+}
+@media (max-width: 1299px) {
+  .control__video-cover {
+    max-width: 340px;
+    height: 207px;
+  }
+  .control__video-cover .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+.control__above-video {
+  margin-top: -130px;
+  color: #FFFFFF;
+}
+.control__title {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+@media (max-width: 1299px) {
+  .control__title {
+    font-size: 22px;
+  }
+  .control__title .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1299px) {
+  .control__video-img {
+    display: none;
+  }
+  .control__video-img .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1300px) {
+  .control__video-img-mobile {
+    display: none;
+  }
+}
+.control__video-cover, .control__video-img, .control__video-img-mobile, .control__play-container {
+  margin-top: -216px;
+}
+@media (max-width: 1299px) {
+  .control__video-cover, .control__video-img, .control__video-img-mobile, .control__play-container {
+    margin-top: -106px;
+  }
+  .control__video-cover .container, .control__video-img .container, .control__video-img-mobile .container, .control__play-container .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+.control__play-button {
+  box-shadow: 0 5px 30px rgba(227, 184, 115, 0.2);
+  width: 85px;
+  height: 85px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 50%;
+}
+@media (max-width: 1299px) {
+  .control__play-button {
+    width: 37px;
+    height: 37px;
+  }
+  .control__play-button .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+.control__play-button:after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  left: 3px;
+  border-style: solid;
+  border-width: 14px 0 14px 22px;
+  border-color: transparent transparent transparent white;
+}
+@media (max-width: 1299px) {
+  .control__play-button:after {
+    border-width: 7px 1px 7px 11px;
+  }
+  .control__play-button:after .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+.control__separator-line {
+  margin-bottom: -162px;
+}
+@media (max-width: 1299px) {
+  .control__separator-line {
+    margin-bottom: -78px;
+  }
+  .control__separator-line .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+.control__description-container {
+  margin-top: 182px;
+  position: relative;
+}
+@media (max-width: 1299px) {
+  .control__description-container {
+    margin-top: 94px;
+  }
+  .control__description-container .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+.control__description {
+  position: absolute;
+  max-width: 681px;
+  margin: auto;
+  left: 8%;
+  font-size: 18px;
+  line-height: 37px;
+}
+@media (max-width: 1299px) {
+  .control__description {
+    color: #FFFFFF;
+    left: 0;
+    font-size: 11px;
+    line-height: 19px;
+  }
+  .control__description .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+.control__form {
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 770px;
+  margin: 140px auto;
+}
+@media (max-width: 1299px) {
+  .control__form {
+    margin: 0 auto;
+    max-width: 340px;
+  }
+  .control__form .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+.control__input {
+  width: 230px;
+  margin-bottom: 35px;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+}
+@media (max-width: 1299px) {
+  .control__input {
+    background-color: #131313;
+    border-bottom: 1px solid #363636;
+    width: 340px;
+  }
+  .control__input .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  .control__input::placeholder {
+    color: #FFFFFF;
+  }
+  .control__input:focus {
+    color: #FFFFFF;
+  }
+}
+.control__button {
+  font-size: 13px;
+  width: 200px;
+  height: 51px;
+}
+.control__button:hover {
+  background: transparent;
+  border: 1px solid;
+  color: #131313;
+}
+@media (max-width: 1299px) {
+  .control .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  .control__button {
+    order: 2;
+    margin-top: 50px;
+  }
+  .control__button:hover {
+    color: #FFFFFF;
+  }
+  .control__checkbox {
+    order: 1;
+  }
+}
+
+@font-face {
+  font-family: "NunitoSansItalic";
+  src: url("../fonts/NunitoSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "NunitoSans";
+  src: url("../fonts/NunitoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "YesevaOne";
+  src: url("../fonts/YesevaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NunitoSansItalic";
+  src: url("../fonts/NunitoSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "NunitoSans";
+  src: url("../fonts/NunitoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "YesevaOne";
+  src: url("../fonts/YesevaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.repair {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.repair__icon-container {
+  margin-bottom: 20px;
+}
+.repair__title {
+  color: #181818;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  font-family: "YesevaOne", sans-serif;
+}
+.repair__demo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+@media (max-width: 1299px) {
+  .repair__demo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .repair__demo .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+.repair__card {
+  width: 392px;
+  margin-bottom: 80px;
+}
+.repair__card-container {
+  width: 72%;
+  background-color: #FFFFFF;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  text-align: left;
+  padding-top: 25px;
+  padding-left: 8%;
+  padding-bottom: 50px;
+  margin: 360px auto 0;
+  position: relative;
+}
+.repair__card1 {
+  background: url("../images/blue-room.jpg") no-repeat;
+}
+.repair__card2 {
+  background: url("../images/light-room.jpg") no-repeat;
+}
+.repair__card3 {
+  background: url("../images/dark-room.jpg") no-repeat;
+}
+.repair__subtitle {
+  font-family: "YesevaOne", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  color: #131313;
+}
+.repair__description {
+  padding-left: 5%;
+  font-size: 15px;
+  line-height: 25px;
+  color: #959595;
+}
+.repair__price-container {
+  display: block;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  background: #E3B873;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  width: 75%;
+  height: 51px;
+}
+.repair__price {
+  color: #FFFFFF;
+  font-family: "YesevaOne", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/*# sourceMappingURL=styles.css.map */

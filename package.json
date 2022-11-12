@@ -1,0 +1,9 @@
+{
+  "name": "turnkey-repair-landing-page",
+  "version": "1.0.0",
+  "description": "Turnkey Repair shop landing page (html + css)",
+  "scripts": {
+    "sass": "sass scss/styles.scss css/styles.css",
+    "sass-watch": "sass --watch scss/styles.scss:css/styles.css"
+  }
+}

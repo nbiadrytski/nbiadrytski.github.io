@@ -1,0 +1,19 @@
+@import "variables";
+
+@mixin breakpoint($point) {
+
+  @if $point == desktop {
+    @media (min-width: 1300px) {
+      @content;
+    }
+  }
+  @else if $point == mobile {
+    @media (max-width: 1299px)  {
+      .container {
+        max-width: $mobile-content-max-width;
+        margin: 0 auto;
+      }
+      @content;
+    }
+  }
+}

@@ -1,0 +1,162 @@
+@import "variables";
+@import "mixins";
+
+.projects {
+  background-color: $black;
+
+  @include breakpoint(mobile) {
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__content {
+    @include breakpoint(mobile) {
+      height: 988px;
+    }
+    height: 1080px;
+  }
+
+  &__title {
+    @include breakpoint(mobile) {
+      padding-top: 36px;
+      text-align: center;
+      font-size: 22px;
+    }
+    font-family: $yeseva;
+    font-size: 27px;
+    line-height: 37px;
+    color: $yellow;
+    padding-top: 179px;
+    margin: 0;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+  }
+
+  &__paragraph {
+    @include breakpoint(mobile) {
+      max-width: $mobile-content-max-width;
+      padding-top: 20px;
+      text-align: center;
+      font-size: 11px;
+    }
+    width: 442px;
+    margin: 0 50px 0 0;
+    padding-top: 34px;
+    color: $white;
+    font-size: 14px;
+    line-height: 27px;
+  }
+
+  &__img-mobile {
+    padding-top: 70px;
+    @include breakpoint(desktop) {
+      display: none;
+    }
+  }
+
+  &__table {
+    margin-top: 42px;
+    max-width: 400px;
+  }
+
+  &__table-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: $yellow;
+  }
+  &__table-row_margin_large {
+    margin-top: 34px;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  &__column-title {
+    font-family: $yeseva;
+    color: $yellow;
+    @include breakpoint(mobile) {
+      font-size: 14px;
+      line-height: 19px;
+    }
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+  }
+
+  &__column-value {
+    margin-top: 9px;
+    color: $white;
+    @include breakpoint(mobile) {
+      font-size: 11px;
+      line-height: 15px;
+    }
+    font-size: 13px;
+    line-height: 21px;
+  }
+
+  &__right {
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: flex-start;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 107px;
+    margin-bottom: 53px;
+  }
+
+  &__menu-item {
+    font-family: Yeseva One, sans-serif;
+    color: rgba(255, 255, 255, 0.3);
+    margin-right: 60px;
+    text-decoration: none;
+
+    &:hover {
+      text-underline-offset: 6px;
+      text-decoration: underline;
+      color: $yellow;
+    }
+  }
+
+  &__arrows {
+    @include breakpoint(mobile) {
+      display: none;
+    }
+    margin-top: 71px;
+    width: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__right-arrow {
+    transform: rotate(-180deg);
+  }
+
+  &__dots {
+    width: 10px;
+    height: 10px;
+    background: $white;
+    border-radius: 30px;
+    margin-left: 20px;
+
+    &:nth-child(5) {
+      margin-right: 20px;
+    }
+  }
+
+  &__img {
+    filter: drop-shadow(0px 50px 30px rgba(0, 0, 0, 0.15));
+  }
+}

@@ -1,0 +1,92 @@
+@import "variables";
+@import "mixins";
+
+.main {
+  @include breakpoint(mobile) {
+    background-image: url("../images/main-mobile.jpg");
+  }
+  background-image: url("../images/main.jpg");
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    @include breakpoint(mobile) {
+      padding-top: 85px;
+      padding-bottom: 61px;
+    }
+    padding-top: 182px;
+    padding-bottom: 196px;
+  }
+
+  &__title, &__paragraph {
+    margin: 0;
+    width: 514px;
+    color: $white;
+    @include breakpoint(mobile) {
+      max-width: $mobile-content-max-width;
+    }
+  }
+
+  &__title {
+    font-family: Yeseva One, sans-serif;
+    @include breakpoint(mobile) {
+      font-size: 23px;
+      line-height: 31px;
+    }
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
+  }
+
+  &__city {
+    color: $yellow;
+  }
+
+  &__paragraph {
+    margin-top: 19px;
+    @include breakpoint(mobile) {
+      font-size: 14px;
+      line-height: 19px;
+    }
+    font-size: 22px;
+    line-height: 36px;
+  }
+
+  &__textline {
+    content: "\a";
+    white-space: pre;
+  }
+
+  &__button {
+    margin-top: 40px;
+    @include breakpoint(mobile) {
+      width: $mobile-content-max-width;
+    }
+    width: 207px;
+    margin-right: 20px;
+    padding: 19px 0;
+  }
+
+  &__app-button:before {
+    content: "SUBMIT YOUR APPLICATION";
+  }
+  // change button text from "SUBMIT YOUR APPLICATION" to "APPLICATION"
+  @include breakpoint(mobile) {
+    &__app-button:before {
+      content: "APPLICATION";
+    }
+  }
+
+  &__overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
